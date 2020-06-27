@@ -1,0 +1,232 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+font-family: 'Montserrat', sans-serif;
+position: relative;
+}
+p{
+    font-size: 18px;
+}
+.height{
+min-height: 80vh;
+}
+/*Main header styles*/
+header{
+    background-color: white;
+}
+header .container{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 0 auto;
+padding: 15px;
+}
+header .container .navbar .menu-bar1{
+    display: flex;
+    list-style: none;
+    margin-right: 450px;
+    align-items: center;
+}
+header .container .navbar .menu-bar2{
+    display: flex;
+    list-style: none;
+}
+header .container .navbar .menu-bar1 .menu{
+    padding: 0 20px;
+}
+header .container .navbar .menu-bar2 .menu{
+  padding: 0 10px;
+}
+.navbar .menu-bar1 a{
+    text-decoration: none;
+    align-items: center;
+}
+.navbar .menu-bar2 a{
+    text-decoration: none;
+    align-items: center;
+}
+.navbar .menu-bar1 a:hover{
+    color: hsl(257, 27%, 26%);
+}
+.navbar .menu-bar2 a:hover{
+    color: hsl(257, 27%, 26%);
+}
+.sign-btn{
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius:20px;
+    min-height: 35px;
+    width: 100px;
+}
+.sign-btn:hover{
+    background-color: hsl(257, 27%, 26%);
+}
+
+
+@media screen and(max-width: 767px){
+   header .container .navbar{
+        display: block;
+        position: absolute;
+        background-color: hsl(257, 27%, 26%);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        min-height: 100vh;
+        z-index: 999;
+    }
+    .navbar .menu{
+        flex-direction: column;
+    }
+}
+
+
+.mainText{
+margin-top: 60px;
+}
+.mainText .btn{
+background-color: hsl(180, 66%, 49%);
+color: white;
+width: 150px;
+border-radius: 20px;
+margin-top: 20px;
+font-weight: bold;
+    }
+/*Urlspace style*/
+
+.urlSpace{
+background-image: url("../images/bg-shorten-desktop.svg");
+background-repeat: no-repeat;
+background-color: hsl(257, 27%, 26%);
+background-position: center;
+background-size: cover;
+margin-top: 70px;
+border-radius: 8px;
+position: absolute;
+top:26%;
+left: 9%;
+}
+input[type="text"]{
+width: 800px;
+height:60px;
+margin: 60px 20px;
+border-radius: 8px;
+}
+.form-body ul{
+display: flex;
+align-items: center;
+justify-content: center;
+list-style: none;
+}
+.form-body .btn{
+background-color: hsl(180, 66%, 49%);
+color: white;
+border-radius: 8px;
+padding: 14px 18px;
+}
+
+/*Styles for the main section*/
+
+.main-section{
+background-color:hsla(0, 0%, 75%, 0.308);
+padding: 70px 0;
+
+}
+.main-section .title{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 100px 0;
+}
+.main-section .title p{
+display: flex;
+align-self: center;
+justify-self: center;
+}
+.main-section .card{
+    position: relative;     
+}
+.main-section .card img{
+width: 60px;
+padding: 12px 12px;
+margin-bottom: 20px;
+border-radius: 50%;
+background-color: hsl(257, 27%, 26%);
+position: absolute;
+left: 5%;
+top: -12%;
+}
+
+/*Cta section-section before the footer*/
+
+.cta-section{
+background-color: hsla(0, 0%, 75%, 0.308);;
+}
+.cta{
+background-image: url("../images/bg-boost-desktop.svg");
+background-repeat: no-repeat;
+background-color: hsl(257, 27%, 26%); 
+background-position: center;
+background-size: cover;
+padding: 40px 0;  
+}
+.cta .btn{
+background-color: hsl(180, 66%, 49%);
+color: white;
+border-radius: 20px;
+margin-left: 600px;
+margin-top: 50px;
+}
+
+/*footer styles*/
+
+footer{
+background-color: rgba(0, 0, 0, 0.883);
+min-height: 100%;
+}
+footer ul a li{
+color: white;
+}
+footer h5{
+color: white;
+}
+footer ul{
+list-style: none;
+text-decoration: none; 
+}
+footer ul a:hover{
+text-decoration: none;
+color: hsl(257, 27%, 26%);
+}
+footer .icons{
+display: flex;
+justify-content: space-around;
+}
+
+/*Responsiveness*/
+
+@media screen and(max-width: 768px){
+.mainHeader{
+max-width: 100%;
+height: 100vh;
+}
+
+.mainText{
+margin-top: 60px;
+}
+.mainText .btn{
+background-color: hsl(180, 66%, 49%);
+color: white;
+width: 300px;
+border-radius: 20px;
+margin-top: 20px;
+font-weight: bold;
+}
+}
+
