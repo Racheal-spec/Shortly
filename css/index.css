@@ -202,6 +202,37 @@ footer .icons{
 display: flex;
 justify-content: space-around;
 }
+.url-container{
+    background-color: cornsilk;
+    width: 300px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+.url-list{
+    min-width: 30%;
+    list-style: none;
+}
+.copy-btn{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    width: 250px;
+    border-radius: 8px;
+}
+.copy-btn p{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.delete-btn{
+    background-color: rgba(255, 0, 0, 0.609);
+    color: white;
+    width: 50px;
+    border-radius:8px;
+}
+.delete-btn p{
+    font-weight: bold;
+    margin-top: 10px;
+}
 
 /*Responsiveness*/
 @media only screen and(min-width: 768px){
