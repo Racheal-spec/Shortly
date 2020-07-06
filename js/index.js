@@ -14,7 +14,7 @@ function genUrl(){
 let URL = document.getElementById('input-link').value;
 let protocols = URL.startsWith('http://')||URL.startsWith('https://')||URL.startsWith('ftp://');
 if(!protocols){
-  newLinks = "http://" + URL;
+  newLinks = "https://" + URL;
   return newLinks;
 } else if (URL, data = {}) {
   postData('https://rel.ink/api/links', {
