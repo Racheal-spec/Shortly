@@ -3,12 +3,13 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
 body{
 font-family: 'Montserrat', sans-serif;
 position: relative;
 }
 p{
-    font-size: 18px;
+    font-size: 16px;
 }
 .height{
 min-height: 80vh;
@@ -90,10 +91,10 @@ background-repeat: no-repeat;
 background-color: hsl(257, 27%, 26%);
 background-position: center;
 background-size: cover;
-border-radius: 8px;
+border-radius: 10px;
 position: absolute;
-top:28%;
-left: 9%;
+top: 25%;
+left: 4%;
 }
 input[type="text"]{
 width: 800px;
@@ -103,6 +104,7 @@ border-radius: 8px;
 }
 input::placeholder{
     font-weight: bold;
+    padding-left: 1rem;
 }
 .form-body ul{
 display: flex;
@@ -113,7 +115,7 @@ list-style: none;
 .form-body button{
 background-color: hsl(180, 66%, 49%);
 border-radius: 8px;
-padding: 10px 18px;
+padding: 8px 16px;
 border: none;
 }
 .form-body button:hover{
@@ -204,10 +206,10 @@ justify-content: space-around;
 }
 .url-container{
     background-color: cornsilk;
-    width: 300px;
-    margin-top: 100px;
+    width: 800px;
+    margin: auto;
     border-radius: 20px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .show-result{
     margin-top:  50px;
