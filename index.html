@@ -57,14 +57,17 @@
   <div class="form-body">
     <ul>
   <li><input type="text" id="input-link" placeholder="Shorten a link here.."/></li>
-  <button><li><a href="#" class="btn font-weight-bold text-light" id="shorten-btn">Shorten it!</a></li></button>
+  <button type="button" class="btn font-weight-bold text-light" onclick="shortLink()">Shorten it!</button>
   </ul>
   </div><!--end of form div-->
   </div><!--end of container div-->
   </div>
   
-  <div class="url-container">
-    <ul class="url-list"></ul>
+  <div class="show-result">
+    <!-- <ul class="url-list"></ul> -->
+    <span id="defaultUrl"></span> 
+    <span id="result"></span>
+    <button type="button" class="copy-btn font-weight-bold"></button>
   </div>
 <!--
 <div class="links-div">
@@ -184,7 +187,6 @@ integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcN
 integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!--main js-->
 <script src="./js/index.js"></script>
-
 </body>
 </html>
 

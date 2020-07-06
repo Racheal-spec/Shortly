@@ -209,29 +209,33 @@ justify-content: space-around;
     border-radius: 20px;
     padding: 20px 0;
 }
-.url-list{
-    min-width: 30%;
-    list-style: none;
-}
-.copy-btn{
-    background-color: hsl(180, 66%, 49%);
-    color: white;
-    width: 250px;
+.show-result{
+    margin-top:  50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-left:240px;
+    padding: 10px 0;
     border-radius: 8px;
 }
-.copy-btn p{
-    font-weight: bold;
-    margin-top: 10px;
+#result{
+   padding-left: 30px;
+   margin-left: 240px; 
+   font-weight: 700;
 }
-.delete-btn{
-    background-color: rgba(255, 0, 0, 0.609);
+#defaultUrl{
+    margin-left: 40px;
+    font-weight: 700;
+}
+.copy-btn{
+    width: 100px;
+    background-color: hsl(180, 66%, 49%);
     color: white;
-    width: 50px;
-    border-radius:8px;
-}
-.delete-btn p{
-    font-weight: bold;
-    margin-top: 10px;
+    margin-left: 110px;
+    padding: 4px 0;
+    border-radius: 8px;
 }
 
 /*Responsiveness*/
