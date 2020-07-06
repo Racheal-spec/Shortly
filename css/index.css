@@ -50,22 +50,18 @@ header .container .navbar .menu-bar2 .menu{
     text-decoration: none;
     align-items: center;
 }
-.navbar .menu-bar1 a:hover{
-    color: hsl(257, 27%, 26%);
-}
-.navbar .menu-bar2 a:hover{
-    color: hsl(257, 27%, 26%);
-}
 .sign-btn{
     background-color: hsl(180, 66%, 49%);
     border: none;
     color: white;
     cursor: pointer;
     border-radius:20px;
-    min-height: 35px;
     width: 100px;
+    min-height: 30px;
 }
-
+.sign-btn a{
+    margin-left: 10px;
+}
 .sign-btn:hover{
     background-color: hsl(257, 27%, 26%);
 }
@@ -81,8 +77,6 @@ header .container .navbar .menu-bar2 .menu{
     margin-top: 20px;
     font-weight: bold;
     }
-
-
 /*Urlspace style*/
 
 .urlSpace{
@@ -93,8 +87,8 @@ background-position: center;
 background-size: cover;
 border-radius: 10px;
 position: absolute;
-top: 25%;
-left: 4%;
+top: 26%;
+left: 8%;
 }
 input[type="text"]{
 width: 800px;
@@ -115,7 +109,7 @@ list-style: none;
 .form-body button{
 background-color: hsl(180, 66%, 49%);
 border-radius: 8px;
-padding: 8px 16px;
+padding: 16px 16px;
 border: none;
 }
 .form-body button:hover{
@@ -155,7 +149,9 @@ position: absolute;
 left: 5%;
 top: -12%;
 }
-
+.last-card{
+    margin-top: 80px;
+}
 /*Cta section-section before the footer*/
 
 .cta-section{
@@ -204,21 +200,14 @@ footer .icons{
 display: flex;
 justify-content: space-around;
 }
-.url-container{
-    background-color: cornsilk;
-    width: 800px;
-    margin: auto;
-    border-radius: 20px;
-    padding: 10px 0;
-}
+
 .show-result{
-    margin-top:  50px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70%;
-    margin-left:240px;
+    margin-left:200px;
     padding: 10px 0;
     border-radius: 8px;
 }
@@ -315,10 +304,29 @@ background-color: hsla(180, 66%, 49%, 0.609);
 }
 .cta .btn{
 margin-left: 140px;
-margin-top: 25px;
 }
 footer .first-list{
 padding-top: 30px;
+}
+.show-result{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 70px;
+    padding: 10px 0;   
+}
+#defaultUrl{
+    margin-left: 2px;
+}
+#result{
+    margin-left: 2px;
+    padding: 5px 0;
+}
+.copy-btn{
+    width: 80%;
+    margin-right: 110px;
+    padding: 4px 0;
 }
 }
  

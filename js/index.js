@@ -1,8 +1,23 @@
 //Define Variables
-
 const shortenBtn = document.querySelector("#shorten-btn");
-//const urlList = document.querySelector('.url-list');
+const linkResult =  document.getElementById('result');
 let newLinks;
+
+//Add eventlistener
+document.addEventListener("DOMContentLoaded", showsavedResults);
+
+//Save results to local storage
+function saveResults(result) {
+  let results;
+  if(localStorage.getItem("results") === null ){
+    results = [];
+  }else{
+  results = JSON.parse(localStorage.getItem("results"));
+  }
+  results.push(result);
+  localStorage.setItem("results", JSON.stringify(results));
+}
+
 
 //Generate URL
 function genUrl(URL){
@@ -12,7 +27,6 @@ function genUrl(URL){
     return newLinks;
   } else{
     return URL;
-  
   }
 }
 // To Validate Url
@@ -22,9 +36,17 @@ function genUrl(URL){
 
 //Main function
 function shortLink(){
+  event.preventDefault();
+
   let URL = document.getElementById('input-link').value;
   let generateUrl = genUrl(URL);
   let validUrl = validateUrl(generateUrl);
+
+  //Call the local storage function here
+
+  saveResults(generateUrl);
+  saveResults(linkResult.innerText)
+
   if (validUrl) {
     
     fetch('https://rel.ink/api/links/', {
@@ -38,8 +60,9 @@ function shortLink(){
       .then(response => response.json())
       .then(result => {
         document.getElementById('defaultUrl').innerHTML = generateUrl;
-        document.getElementById('result').innerHTML = '<a href="https://rel.ink/'+result.hashid+'">https://rel.ink/'+ result.hashid +'</a>';
+       linkResult.innerHTML = '<a href="https://rel.ink/'+result.hashid+'">https://rel.ink/'+ result.hashid +'</a>';
         document.querySelector('.copy-btn').innerHTML = "Copy";
+        document.querySelector('.delete-btn').innerHTML;
         console.log('Success:', result);
       })
       .catch(error => {
@@ -49,14 +72,42 @@ function shortLink(){
     alert("Please input a valid Url!!"); 
   } 
 }
-//Save results to local storage
-function saveResults() {
+
+//A function to make the saved results show on the interface
+
+function showsavedResults(result) {
   let results;
   if(localStorage.getItem("results") === null ){
     results = [];
   }else{
   results = JSON.parse(localStorage.getItem("results"));
   }
-  results.push("result");
-  localStorage.setItem("results", JSON.stringify(results));
-}
+  results.forEach(result => {
+    let URL = document.getElementById('input-link').value;
+    let generateUrl = genUrl(URL);
+    let validUrl = validateUrl(generateUrl);
+  
+    if (validUrl) {
+      
+      fetch('https://rel.ink/api/links/', {
+          method: 'POST',
+          body: JSON.stringify({'url':generateUrl}),
+          headers: {
+              'Content-Type': 'application/json'
+            },
+          mode: 'cors',
+        })
+        .then(response => response.json())
+        .then(result => {
+          document.getElementById('defaultUrl').innerHTML = generateUrl;
+         linkResult.innerHTML= '<a href="https://rel.ink/'+result.hashid+'">https://rel.ink/'+ result.hashid +'</a>';
+          document.querySelector('.copy-btn').innerHTML = "Copy";
+          console.log('Success:', result);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }else{
+      alert("Please input a valid Url!!"); 
+    } 
+  })};
