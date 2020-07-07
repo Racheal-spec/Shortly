@@ -26,6 +26,22 @@ justify-content: space-between;
 margin: 0 auto;
 padding: 15px;
 }
+
+.nav-bar {
+    width: 88%;
+    margin: auto;
+}
+
+.nav-item {
+    padding-left: 2rem;
+    font-size: 1.25rem;
+}
+
+.nav-login {
+    padding-right: 2rem;
+    font-size: 1.25rem;
+}
+
 header .container .navbar .menu-bar1{
     display: flex;
     list-style: none;
@@ -42,7 +58,7 @@ header .container .navbar .menu-bar1 .menu{
 header .container .navbar .menu-bar2 .menu{
   padding: 0 10px;
 }
-.navbar .menu-bar1 a{
+/* .navbar .menu-bar1 a{
     text-decoration: none;
     align-items: center;
 }
@@ -55,19 +71,21 @@ header .container .navbar .menu-bar2 .menu{
 }
 .navbar .menu-bar2 a:hover{
     color: hsl(257, 27%, 26%);
+} */
+.navbar {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
 }
-.sign-btn{
-    background-color: hsl(180, 66%, 49%);
-    border: none;
+.btn-success {
+    background-color: hsl(180, 66%, 49%) !important;
+    border: none !important;
     color: white;
-    cursor: pointer;
-    border-radius:20px;
-    min-height: 35px;
-    width: 100px;
+    border-radius: 26px !important;
+    padding: .45rem 1.5rem !important;
 }
 
-.sign-btn:hover{
-    background-color: hsl(257, 27%, 26%);
+.btn-success:hover{
+    background-color: hsl(257, 27%, 26%) !important;
 }
 .main img{
     max-width: 100%;
