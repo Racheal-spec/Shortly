@@ -99,8 +99,6 @@ header .container .navbar .menu-bar2 .menu{
     margin-top: 20px;
     font-weight: bold;
     }
-
-
 /*Urlspace style*/
 
 .urlSpace{
@@ -111,8 +109,8 @@ background-position: center;
 background-size: cover;
 border-radius: 10px;
 position: absolute;
-top: 25%;
-left: 4%;
+top: 26%;
+left: 8%;
 }
 input[type="text"]{
 width: 800px;
@@ -133,7 +131,7 @@ list-style: none;
 .form-body button{
 background-color: hsl(180, 66%, 49%);
 border-radius: 8px;
-padding: 8px 16px;
+padding: 16px 16px;
 border: none;
 }
 .form-body button:hover{
@@ -173,7 +171,9 @@ position: absolute;
 left: 5%;
 top: -12%;
 }
-
+.last-card{
+    margin-top: 80px;
+}
 /*Cta section-section before the footer*/
 
 .cta-section{
@@ -222,36 +222,33 @@ footer .icons{
 display: flex;
 justify-content: space-around;
 }
-.url-container{
-    background-color: cornsilk;
-    width: 800px;
-    margin: auto;
-    border-radius: 20px;
+
+.show-result{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-left:200px;
     padding: 10px 0;
-}
-.url-list{
-    min-width: 30%;
-    list-style: none;
-}
-.copy-btn{
-    background-color: hsl(180, 66%, 49%);
-    color: white;
-    width: 250px;
     border-radius: 8px;
 }
-.copy-btn p{
-    font-weight: bold;
-    margin-top: 10px;
+#result{
+   padding-left: 30px;
+   margin-left: 240px; 
+   font-weight: 700;
 }
-.delete-btn{
-    background-color: rgba(255, 0, 0, 0.609);
+#defaultUrl{
+    margin-left: 40px;
+    font-weight: 700;
+}
+.copy-btn{
+    width: 100px;
+    background-color: hsl(180, 66%, 49%);
     color: white;
-    width: 50px;
-    border-radius:8px;
-}
-.delete-btn p{
-    font-weight: bold;
-    margin-top: 10px;
+    margin-left: 110px;
+    padding: 4px 0;
+    border-radius: 8px;
 }
 
 /*Responsiveness*/
@@ -329,10 +326,29 @@ background-color: hsla(180, 66%, 49%, 0.609);
 }
 .cta .btn{
 margin-left: 140px;
-margin-top: 25px;
 }
 footer .first-list{
 padding-top: 30px;
+}
+.show-result{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: 70px;
+    padding: 10px 0;   
+}
+#defaultUrl{
+    margin-left: 2px;
+}
+#result{
+    margin-left: 2px;
+    padding: 5px 0;
+}
+.copy-btn{
+    width: 80%;
+    margin-right: 110px;
+    padding: 4px 0;
 }
 }
  
