@@ -257,8 +257,8 @@ justify-content: space-around;
     }
     .nav-login{
         margin-bottom: 5px;
-        color: white;
-        margin-left: 8px;
+        color: white!important;
+        margin-left: 10px;
     }
     .btn-success{
         padding: .45rem 6rem !important;
@@ -272,9 +272,9 @@ justify-content: space-around;
     color: white;
     width: 150px;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: bold;
-    margin-left: 90px;
+    margin-left: 110px;
     }
     .mainText h1{
         font-size: 6vh;
@@ -347,7 +347,7 @@ width: 100%;
 
 }
 .cta .btn{
-margin-left: 110px;
+margin-left: 130px;
 }
 footer .first-list{
 padding-top: 30px;
