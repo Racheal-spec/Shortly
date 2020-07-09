@@ -34,44 +34,16 @@ padding: 15px;
 
 .nav-item {
     padding-left: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .nav-login {
     padding-right: 2rem;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: grey;
 }
-
-header .container .navbar .menu-bar1{
-    display: flex;
-    list-style: none;
-    margin-right: 450px;
-    align-items: center;
-}
-header .container .navbar .menu-bar2{
-    display: flex;
-    list-style: none;
-}
-header .container .navbar .menu-bar1 .menu{
-    padding: 0 20px;
-}
-header .container .navbar .menu-bar2 .menu{
-  padding: 0 10px;
-}
-/* .navbar .menu-bar1 a{
-    text-decoration: none;
-    align-items: center;
-}
-.navbar .menu-bar2 a{
-    text-decoration: none;
-    align-items: center;
-}
-.navbar .menu-bar1 a:hover{
-    color: hsl(257, 27%, 26%);
-}
-.navbar .menu-bar2 a:hover{
-    color: hsl(257, 27%, 26%);
-} */
 .navbar {
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
@@ -82,6 +54,7 @@ header .container .navbar .menu-bar2 .menu{
     color: white;
     border-radius: 26px !important;
     padding: .45rem 1.5rem !important;
+    font-weight: bold !important;
 }
 
 .btn-success:hover{
@@ -91,11 +64,14 @@ header .container .navbar .menu-bar2 .menu{
     max-width: 100%;
     height: auto;
 }
+.mainText p{
+    font-size: 1.1rem;
+}
 .mainText .btn{
     background-color: hsl(180, 66%, 49%);
     color: white;
-    width: 150px;
-    border-radius: 20px;
+    padding: .45rem 1.5rem;
+    border-radius: 26px;
     margin-top: 20px;
     font-weight: bold;
     }
@@ -131,7 +107,7 @@ list-style: none;
 .form-body button{
 background-color: hsl(180, 66%, 49%);
 border-radius: 8px;
-padding: 16px 16px;
+padding: 10px 16px;
 border: none;
 }
 .form-body button:hover{
@@ -143,8 +119,7 @@ border: none;
 .main-section{
 background-color:hsla(0, 0%, 75%, 0.308);
 margin-top:80px;
-padding: 100px 0;
-
+padding: 60px 0;
 }
 .main-section .title{
 display: flex;
@@ -154,9 +129,9 @@ justify-content: center;
 padding: 100px 0;
 }
 .main-section .title p{
-display: flex;
-align-self: center;
-justify-self: center;
+width: 50%;
+font-size: 18px;
+margin-top: 10px;
 }
 .main-section .card{
     position: relative;     
@@ -192,7 +167,7 @@ background-color: hsl(180, 66%, 49%);
 color: white;
 border-radius: 20px;
 margin-left: 600px;
-margin-top: 30px;
+margin-top: 25px;
 }
 
 /*footer styles*/
@@ -230,32 +205,65 @@ justify-content: space-around;
     justify-content: center;
     width: 70%;
     margin-left:200px;
-    padding: 10px 0;
+    margin-top: 30px;
     border-radius: 8px;
+    height: auto;
+}
+.show-result ul{
+    list-style: none;
 }
 #result{
-   padding-left: 30px;
-   margin-left: 240px; 
    font-weight: 700;
 }
 #defaultUrl{
-    margin-left: 40px;
     font-weight: 700;
 }
 .copy-btn{
     width: 100px;
     background-color: hsl(180, 66%, 49%);
     color: white;
-    margin-left: 110px;
-    padding: 4px 0;
+    text-align: center;
+    margin-left: 200px;
+    padding: 6px 0;
     border-radius: 8px;
+    font-weight: bold;
+}
+.copy-btn:hover{
+    text-decoration: none;
+    color: hsl(257, 27%, 26%);
 }
 
 /*Responsiveness*/
-@media only screen and(min-width: 768px){
-  
-}
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
+    .navbar-show{
+        margin-top: 40px;
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 10px;
+    }
+    .nav-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+        line-height: 40px;
+    }
+    .nav-link{
+        color: white !important;
+    }
+    .form-inline{
+        display: flex;
+        flex-direction: column !important; 
+        line-height: 60px;  
+    }
+    .nav-login{
+        margin-bottom: 5px;
+        color: white;
+        margin-left: 8px;
+    }
+    .btn-success{
+        padding: .45rem 6rem !important;
+        margin-right:15px;
+    }
     .mainText{
         margin-top: 30px;
     }
@@ -266,12 +274,16 @@ justify-content: space-around;
     border-radius: 20px;
     margin-top: 20px;
     font-weight: bold;
-    margin-left: 110px;
+    margin-left: 90px;
     }
     .mainText h1{
-        font-size: 10vh;
+        font-size: 6vh;
         text-align: center;
     }
+    .mainText p{
+        text-align: center;
+        padding-top: 10px;
+        }
     .main .row{
         display: flex;
         flex-direction: column-reverse;
@@ -293,7 +305,7 @@ input[type="text"]{
     background-color: hsl(257, 27%, 26%);
     background-position: center;
     border-radius: 8px;
-    top:25%;
+    top: 21%;
     left: -1%;
     right: -1%;
     }
@@ -314,6 +326,15 @@ margin-bottom: 10px;
 .form-body button:hover{
 background-color: hsla(180, 66%, 49%, 0.609);
 }
+.main-section{
+    padding: 10px 0;
+}
+.main-section .title h1{
+    font-size: 2rem;
+}
+.main-section .title p{
+width: 100%;
+}
 .main-section .card img{
     left: 40%;
 }
@@ -323,9 +344,10 @@ background-color: hsla(180, 66%, 49%, 0.609);
 }
 .cta{
     background-image: url("../images/bg-boost-mobile.svg");
+
 }
 .cta .btn{
-margin-left: 140px;
+margin-left: 110px;
 }
 footer .first-list{
 padding-top: 30px;
@@ -335,8 +357,11 @@ padding-top: 30px;
     flex-direction: column;
     width: 80%;
     margin-left: 40px;
-    margin-top: 70px;
+    margin-top: 100px;
     padding: 10px 0;   
+}
+.show-result ul{
+    list-style: none;
 }
 #defaultUrl{
     margin-left: 2px;
@@ -347,7 +372,7 @@ padding-top: 30px;
 }
 .copy-btn{
     width: 80%;
-    margin-right: 110px;
+    margin-right: 200px;
     padding: 4px 0;
 }
 }
