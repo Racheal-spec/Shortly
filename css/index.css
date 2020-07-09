@@ -29,7 +29,7 @@ padding: 15px;
 
 .nav-bar {
     width: 88%;
-    margin: auto;
+    margin: 0px 20px;
 }
 
 .nav-item {
@@ -43,6 +43,10 @@ padding: 15px;
     font-size: 1.1rem;
     font-weight: bold;
     color: grey;
+}
+.nav-login:hover{
+    color: rgba(0, 0, 0, 0.774);
+    text-decoration: none;
 }
 .navbar {
     padding-top: 2rem !important;
@@ -85,7 +89,7 @@ background-position: center;
 background-size: cover;
 border-radius: 10px;
 position: absolute;
-top: 26%;
+top: 29%;
 left: 8%;
 }
 input[type="text"]{
@@ -96,7 +100,6 @@ border-radius: 8px;
 }
 input::placeholder{
     font-weight: bold;
-    padding-left: 1rem;
 }
 .form-body ul{
 display: flex;
@@ -113,7 +116,9 @@ border: none;
 .form-body button:hover{
     background-color: hsla(180, 66%, 49%, 0.609);
 }
-
+#show{
+    display: none;
+}
 /*Styles for the main section*/
 
 .main-section{
@@ -147,8 +152,9 @@ left: 5%;
 top: -12%;
 }
 .last-card{
-    margin-top: 80px;
+    padding-bottom: 35px;
 }
+
 /*Cta section-section before the footer*/
 
 .cta-section{
@@ -166,7 +172,7 @@ padding: 40px 0;
 background-color: hsl(180, 66%, 49%);
 color: white;
 border-radius: 20px;
-margin-left: 600px;
+margin-left: 580px;
 margin-top: 25px;
 }
 
@@ -175,7 +181,6 @@ margin-top: 25px;
 footer{
 background-color: rgba(0, 0, 0, 0.883);
 min-height: 100%;
-text-align: center;
 }
 footer ul li a{
 color:hsl(0, 0%, 75%);
@@ -198,25 +203,29 @@ display: flex;
 justify-content: space-around;
 }
 
-.show-result{
+#show{
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 70%;
+    padding: 10px 0;
     margin-left:200px;
-    margin-top: 30px;
+    margin-top: 70px;
     border-radius: 8px;
     height: auto;
 }
-.show-result ul{
-    list-style: none;
+.show-div{
+    display: none;
+}
+#show li{
+    list-style: none;  
 }
 #result{
    font-weight: 700;
+   margin-left: 300px;
 }
 #defaultUrl{
     font-weight: 700;
+    margin-left: 20px;
 }
 .copy-btn{
     width: 100px;
@@ -274,7 +283,7 @@ justify-content: space-around;
     border-radius: 20px;
     margin-top: 10px;
     font-weight: bold;
-    margin-left: 110px;
+    margin-left: 90px;
     }
     .mainText h1{
         font-size: 6vh;
@@ -305,7 +314,7 @@ input[type="text"]{
     background-color: hsl(257, 27%, 26%);
     background-position: center;
     border-radius: 8px;
-    top: 21%;
+    top: 23%;
     left: -1%;
     right: -1%;
     }
@@ -347,20 +356,25 @@ width: 100%;
 
 }
 .cta .btn{
-margin-left: 130px;
+margin-left: 140px;
+}
+footer{
+    text-align: center;
 }
 footer .first-list{
 padding-top: 30px;
 }
-.show-result{
+#show{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     margin-left: 40px;
-    margin-top: 100px;
-    padding: 10px 0;   
+    margin-top: 110px;
+    padding: 14px 0;   
 }
-.show-result ul{
+#show li{
     list-style: none;
 }
 #defaultUrl{
@@ -372,8 +386,12 @@ padding-top: 30px;
 }
 .copy-btn{
     width: 80%;
-    margin-right: 200px;
-    padding: 4px 0;
+    padding: 4px 0px;
+    margin-right: 180px !important;
+}
+.copy-btn:hover{
+    text-decoration: none;
+    color: hsl(257, 27%, 26%);
 }
 }
  

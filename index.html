@@ -21,6 +21,7 @@ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7
 
   <!--Header starts-->
   <header>
+    <div class="container">
     <div class="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><img src="./images/logo.svg"></a>
@@ -47,15 +48,15 @@ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7
           </form>
         </div>
       </nav>
+   </div>
+    </div><!--container div-->
 
-    </div>
 
-
-    <div class="container pb-5 main">
+    <div class="container p-5 main">
       <div class="row">
         <div class="col-sm-6 align-items-center mainText">
           <h1 class="font-weight-bold display-3">More than just shorter links</h1>
-          <p class="text-muted text-center">Build your brand’s recognition and get detailed insights
+          <p class="text-muted">Build your brand’s recognition and get detailed insights
             on how your links are performing.</p>
           <a href="#" class="btn"> Get Started</a>
         </div>
@@ -83,13 +84,15 @@ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7
       <!--end of form div-->
     </div>
     <!--end of container div-->
-    <div class="show-result">
-      <ul>
+    <div class="show-div">
+    <div id="show">
         <li id="defaultUrl"></li>
         <li id="result"></li>
-      </ul>
      <a href="#" class="copy-btn"></a>
     </div>
+    </div>
+      <i></i>
+
   </div>
 
   <!--Statistics section-->
@@ -130,7 +133,7 @@ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7
       <!--end of col-->
 
       <div class="col-sm-4">
-        <div class="card mt-5">
+        <div class="card mt-5 last-card">
           <img src="./images/icon-fully-customizable.svg">
           <div class="card-body p-5">
             <h3 class="font-weight-bold">Fully Customizable</h3>
