@@ -19,45 +19,68 @@ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7
 <body>
 
 
-<!--Header starts-->
-<header>
-  <div class="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><img src="./images/logo.svg"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!--Header starts-->
+  <header>
+    <div class="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="./images/logo.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse navbar-show" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto pl-md-5">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resources</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <a href="#" class=" nav-login">Login</a>
-          <button class="btn btn-success my-2 my-sm-0" type="submit">Sign Up</button>
-        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto pl-md-5">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <a href="#" class="text-muted nav-login">Login</a>
+            <button class="btn btn-success my-2 my-sm-0" type="submit">Sign Up</button>
+          </form>
+        </div>
+      </nav>
+
+    </div>
+
+
+    <div class="container pb-5 main">
+      <div class="row">
+        <div class="col-sm-6 align-items-center mainText">
+          <h1 class="font-weight-bold display-3">More than just shorter links</h1>
+          <p class="text-muted text-center">Build your brand’s recognition and get detailed insights
+            on how your links are performing.</p>
+          <a href="#" class="btn"> Get Started</a>
+        </div>
+        <div class="col-sm-6">
+          <img src="./images/illustration-working.svg">
+        </div>
       </div>
-    </nav>
+    </div>
+  </header>
+  <!--Header ends here-->
 
-  </div>
-
-
-  <div class="container pb-5 main">
-    <div class="row">
-      <div class="col-sm-6 align-items-center mainText">
-        <h1 class="font-weight-bold display-3">More than just shorter links</h1>
-        <p class="text-muted">Build your brand’s recognition and get detailed insights
-          on how your links are performing.</p>
-        <a href="#" class="btn"> Get Started</a>
+  <!--main section--->
+  <section class="main-section">
+    <div class="url-body">
+      <div class="container urlSpace">
+        <!--form div-----shorten a link here-->
+        <div class="form-body">
+          <ul>
+            <li><input type="text" id="input-link" placeholder="Shorten a link here.." /></li>
+            <button>
+              <li><a href="#" class="btn font-weight-bold text-light" id="shorten-btn">Shorten it!</a></li>
+            </button>
+          </ul>
+        </div>
+        <!--end of form div-->
       </div>
       <div class="col-sm-6">
         <img src="./images/illustration-working.svg">
@@ -149,19 +172,65 @@ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7
       </div>
 
     </div>
-    <!--end of row div-->
+    <!--end of container div-->
+  </section>
 
-  </div>
-  <!--end of container div-->
-</section>
+  <!--cta section----section before the footer-->
+  <section class="pt-5 cta-section">
+    <div class="container-fluid cta ">
+      <h1 class="text-center font-weight-bold text-light">Boost your links today</h1>
+      <a href="#" class="btn font-weight-bold"> Get Started</a>
+    </div>
+  </section>
 
-<!--cta section----section before the footer-->
-<section class="pt-5 cta-section">
-  <div class="container-fluid cta ">
-    <h1 class="text-center font-weight-bold text-light">Boost your links today</h1>
-    <a href="#" class="btn font-weight-bold"> Get Started</a>
-  </div>
-</section>
+  <!--footer section-->
+  <footer class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="./images/logo1.svg">
+        </div>
+        <div class="col-lg-2 first-list">
+          <h5 class="font-weight-bold">Features</h5>
+          <ul class="text-muted">
+            <li><a href="#">Link Shortening</a></li>
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5 class="font-weight-bold">Resources</h5>
+          <ul class="text-muted">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <h5 class="font-weight-bold">Company</h5>
+          <ul class="text-muted">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Branded URL</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <ul class="icons">
+            <a href="#">
+              <li><img src="./images/icon-facebook.svg"></li>
+            </a>
+            <a href="#">
+              <li><img src="./images/icon-instagram.svg"></li>
+            </a>
+            <a href="#">
+              <li><img src="./images/icon-pinterest.svg"></li>
+            </a>
+            <a href="#">
+              <li><img src="./images/icon-twitter.svg"></li>
+            </a>
+          </ul>
+        </div>
 
 <!--footer section-->
 <footer class="p-5">
@@ -229,8 +298,15 @@ integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7
   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
   crossorigin="anonymous"></script>
 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap javascript-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
   <!--main js-->
-<script src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 
 </body>
 
