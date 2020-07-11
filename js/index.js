@@ -1,13 +1,13 @@
 //Define Variables
 const shortenBtn = document.getElementById("shorten-btn");
 const linkResult =  document.getElementById('result');
-//const copyBtn = document.querySelector('.copy-btn');
+const copyBtn = document.querySelector('.copy-btn');
 let newLinks;
 
 //Add eventlistener
 document.addEventListener("DOMContentLoaded", showsavedResults);
 shortenBtn.addEventListener("click", shortLink);
-//copyBtn.addEventListener("click", copyText);
+
 //Save results to local storage
 function saveResults(result) {
 let results;
@@ -75,26 +75,6 @@ fetch('https://rel.ink/api/links/', {
 } 
 
 }
-/*
-// Copy Button
-function copyButton(e) {
-
-e.target.innerText = 'Copied';
-document.querySelector('.copy-btn').innerHTML = "Copy";
-const url = e.target.previousElementSibling.className;
-console.log(url);
-copyText(url)
-}
-
-// Copy Text
-function copyText() {
-let copyText = document.getElementById("result");
-console.log(copyText);
-copyText.select();
-copyText.setSelectionRange(0, 99999);
-document.execCommand("copy");
-}
-*/
 
 //A function to make the saved results show on the interface
 
@@ -135,3 +115,21 @@ fetch('https://rel.ink/api/links/', {
 ("Please enter a valid URL")
 } 
 })};
+
+copyBtn.addEventListener("click", function onClickCopy(){
+  const value = document.getElementById('result').innerText;
+  if (value) {
+      let textField = document.createElement('textarea');
+      textField.innerText = value;
+      //console.log(textField.innerText);
+      
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand('copy');
+    textField.remove();
+  }
+  
+});
+
+
+ 

@@ -234,7 +234,7 @@ justify-content: space-around;
     background-color: hsl(180, 66%, 49%);
     color: white;
     text-align: center;
-    margin-left: 200px;
+    margin-left: 100px;
     padding: 6px 0;
     border-radius: 8px;
     font-weight: bold;
@@ -368,8 +368,7 @@ padding-top: 30px;
     align-items: center;
     justify-content: center;
     width: 80%;
-    margin-left: 40px;
-    margin-top: 110px;
+    margin-left: 40px;   
     padding: 14px 0;   
 }
 #show li{
@@ -392,31 +391,42 @@ padding-top: 30px;
     color: hsl(257, 27%, 26%);
 }
 }
-@media screen and (max-width: 480px){
+
+@media screen and (min-device-width: 360px){
     .cta .btn{
-        margin-left: 110px;
+margin-left: 110px;
     }
-    .mainText .btn{
-margin-left: 75px;
-    }
-}
-@media screen and (max-width: 600px){
-    .mainText .btn{
-        margin-left: 85px;
-    }
-    .urlSpace{
-        top: 24%;
-    }
-    .cta .btn{
-        margin-left: 135px;
-    }
-}
-@media screen and (max-width: 900px){
     .mainText .btn{
         margin-left: 70px;
     }
+    #show{
+        margin-top: 130px;
+    }
+    .copy-btn{
+            margin-left: 170px;
+    }
+}
+@media screen and (min-device-width: 414px){
+    .mainText .btn{
+        margin-left: 100px;
+        margin-bottom: 100px;
+    }
+    #show{
+        margin-bottom: 100px;
+    }
+    .copy-btn{
+        margin-left: 170px;
+    }
+    .cta .btn{
+        margin-left: 140px;
+    }
+}
+@media screen and (min-device-width: 375px){
     .cta .btn{
         margin-left: 120px;
+    }
+    .copy-btn{
+        margin-left: 170px;
     }
 }
 
