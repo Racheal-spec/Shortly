@@ -71,14 +71,16 @@ padding: 15px;
 .mainText p{
     font-size: 1.1rem;
 }
+
 .mainText .btn{
     background-color: hsl(180, 66%, 49%);
     color: white;
-    padding: .45rem 1.5rem;
+    padding: .45rem 1.5rem ;
     border-radius: 26px;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     font-weight: bold;
     }
+    
 /*Urlspace style*/
 
 .urlSpace{
@@ -270,20 +272,16 @@ justify-content: space-around;
         margin-left: 10px;
     }
     .btn-success{
-        padding: .45rem 6rem !important;
+        padding: 10px 80px !important;
         margin-right:15px;
     }
     .mainText{
         margin-top: 30px;
     }
     .mainText .btn{
-    background-color: hsl(180, 66%, 49%);
-    color: white;
-    width: 150px;
-    border-radius: 20px;
     margin-top: 10px;
     font-weight: bold;
-    margin-left: 90px;
+    margin-left: 60px;
     }
     .mainText h1{
         font-size: 6vh;
@@ -356,7 +354,7 @@ width: 100%;
 
 }
 .cta .btn{
-margin-left: 140px;
+margin-left: 105px;
 }
 footer{
     text-align: center;
@@ -394,7 +392,32 @@ padding-top: 30px;
     color: hsl(257, 27%, 26%);
 }
 }
- 
-
+@media screen and (max-width: 480px){
+    .cta .btn{
+        margin-left: 110px;
+    }
+    .mainText .btn{
+margin-left: 75px;
+    }
+}
+@media screen and (max-width: 600px){
+    .mainText .btn{
+        margin-left: 85px;
+    }
+    .urlSpace{
+        top: 24%;
+    }
+    .cta .btn{
+        margin-left: 135px;
+    }
+}
+@media screen and (max-width: 900px){
+    .mainText .btn{
+        margin-left: 70px;
+    }
+    .cta .btn{
+        margin-left: 120px;
+    }
+}
 
 
