@@ -443,3 +443,11 @@ padding: 10px 80px !important;
 margin-left: 45px;
 }
 }
+@media screen and (device-width: 412px){
+    .mainText .btn{
+        margin-left: 96px;
+    }
+    .cta .btn{
+    margin-left: 140px;
+    } 
+}
