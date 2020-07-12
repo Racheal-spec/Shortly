@@ -450,4 +450,10 @@ margin-left: 45px;
     .cta .btn{
     margin-left: 140px;
     } 
+    .nav-login{
+        margin-left: 125px;
+    }
+    .btn-success{
+        margin-left: 40px;
+    }
 }
