@@ -211,6 +211,19 @@ display: flex;
 justify-content: space-around;
 }
 
+#myToast{
+    margin-left: 50%;
+}
+.toast-body{
+    margin-left: 40%;
+    font-weight: bold;
+    font-size: 20px;
+    color: hsl(180, 66%, 49%);
+}
+.cancel{
+    font-weight: bold;
+    color: red;
+}
 #show{
 background-color: white;
 display: flex;
@@ -432,7 +445,7 @@ right: -1%;
 margin-left: 140px;
 }
 #show{
-margin-top: 10px;
+margin-top: 110px;
 }
 .nav-login{
 margin-bottom: 5px;

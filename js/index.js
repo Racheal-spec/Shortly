@@ -2,11 +2,18 @@
 const shortenBtn = document.getElementById("shorten-btn");
 const linkResult =  document.getElementById('result');
 const copyBtn = document.querySelector('.copy-btn');
+//const toaster = document.querySelector('.toast');
 let newLinks;
 
 //Add eventlistener
 document.addEventListener("DOMContentLoaded", showsavedResults);
 shortenBtn.addEventListener("click", shortLink);
+copyBtn.addEventListener('click', function copied() {
+  $(document).ready(function(){
+    $('#myToast').toast('show');
+  });
+});
+
 
 //Save results to local storage
 function saveResults(result) {
@@ -130,6 +137,7 @@ copyBtn.addEventListener("click", function onClickCopy(){
   }
   
 });
+
 
 
  
