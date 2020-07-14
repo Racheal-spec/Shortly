@@ -402,6 +402,10 @@ background-color: hsla(180, 66%, 49%, 0.609);
 .urlSpace{
     top: 22%;
 }
+#myToast{
+    margin-left: 10%;
+    max-width: 80%;
+}
 }
 @media screen and (max-width: 480px)and (min-width: 320px) {
 .main .row{
